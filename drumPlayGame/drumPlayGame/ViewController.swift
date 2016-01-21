@@ -95,6 +95,7 @@ class ViewController: UIViewController {
         yellow2View.hidden = true
         //        var timer_yy2 = NSTimer.scheduledTimerWithTimeInterval(0.01,target:self,selector:Selector("t2_disappear"),
         //            userInfo:nil,repeats:false)
+        alert_grade()
     }
     @IBAction func pinkView(sender: AnyObject) {
         pinkView.backgroundColor = UIColor.redColor()
@@ -146,7 +147,8 @@ class ViewController: UIViewController {
         var timer12 = NSTimer.scheduledTimerWithTimeInterval(8,target:self,selector:Selector("yellow2_up"),
             userInfo:nil,repeats:false)
         
-        
+        var timer_score = NSTimer.scheduledTimerWithTimeInterval(13,target:self,selector:Selector("alert_grade"),
+            userInfo:nil,repeats:false)
         
     }
     
@@ -312,13 +314,24 @@ class ViewController: UIViewController {
     //        pinkView.hidden = true
     //    }
     
-    
-       
+    func alert_grade(){
+    var alert = UIAlertController(title: "完成", message: "恭喜得到\(number)分", preferredStyle: UIAlertControllerStyle.Alert)
+    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler:
+    {(alert: UIAlertAction!) in self.performSegueWithIdentifier("to_record", sender: AnyObject?())}
+    ))
+    self.presentViewController(alert, animated: true, completion: nil)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "to_record"{
+            let v = segue.destinationViewController as! record
+            v.score = self.number
+        }
+    }
     
 }
 

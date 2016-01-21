@@ -14,6 +14,7 @@
 		BE39DD5D1C50F1F600FB88C0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE39DD5C1C50F1F600FB88C0 /* Images.xcassets */; };
 		BE39DD601C50F1F600FB88C0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE39DD5E1C50F1F600FB88C0 /* LaunchScreen.xib */; };
 		BE39DD6C1C50F1F600FB88C0 /* drumPlayGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE39DD6B1C50F1F600FB88C0 /* drumPlayGameTests.swift */; };
+		BE623DEB1C50F7F900A1B14C /* record.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE623DEA1C50F7F900A1B14C /* record.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		BE39DD651C50F1F600FB88C0 /* drumPlayGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = drumPlayGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE39DD6A1C50F1F600FB88C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE39DD6B1C50F1F600FB88C0 /* drumPlayGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drumPlayGameTests.swift; sourceTree = "<group>"; };
+		BE623DEA1C50F7F900A1B14C /* record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = record.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			children = (
 				BE39DD521C50F1F600FB88C0 /* AppDelegate.swift */,
 				BE39DD571C50F1F600FB88C0 /* ViewController.swift */,
+				BE623DEA1C50F7F900A1B14C /* record.swift */,
 				BE39DD591C50F1F600FB88C0 /* Main.storyboard */,
 				BE39DD5C1C50F1F600FB88C0 /* Images.xcassets */,
 				BE39DD5E1C50F1F600FB88C0 /* LaunchScreen.xib */,
@@ -217,6 +220,7 @@
 			files = (
 				BE39DD581C50F1F600FB88C0 /* ViewController.swift in Sources */,
 				BE39DD531C50F1F600FB88C0 /* AppDelegate.swift in Sources */,
+				BE623DEB1C50F7F900A1B14C /* record.swift in Sources */,
 				BE39DD561C50F1F600FB88C0 /* drumPlayGame.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +417,7 @@
 				BE39DD711C50F1F600FB88C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE39DD721C50F1F600FB88C0 /* Build configuration list for PBXNativeTarget "drumPlayGameTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +426,7 @@
 				BE39DD741C50F1F600FB88C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
