@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var yellowView: UIButton!
     @IBOutlet weak var yellow2View: UIButton!
     @IBOutlet weak var pinkView: UIButton!
+     @IBOutlet weak var greanView: UIButton!
     
     
     var backgroundQueue = NSOperationQueue()
@@ -107,6 +108,16 @@ class ViewController: UIViewController {
         //            userInfo:nil,repeats:false)
     }
     
+    @IBAction func greanView(sender: AnyObject) {
+        greanView.backgroundColor = UIColor.redColor()
+        number = number + 70
+        
+        updateScoreLabel()
+        greanView.hidden = true
+        //        var timer_pp = NSTimer.scheduledTimerWithTimeInterval(0.01,target:self,selector:Selector("k_disappear"),
+        //            userInfo:nil,repeats:false)
+    }
+    
     
     
     
@@ -128,7 +139,7 @@ class ViewController: UIViewController {
         yellowView.hidden = true
         yellow2View.hidden = true
         pinkView.hidden = true
-        
+        greanView.hidden = true
         
         var timer5 = NSTimer.scheduledTimerWithTimeInterval(1,target:self,selector:Selector("blue_up"),
             userInfo:nil,repeats:false)
@@ -145,6 +156,8 @@ class ViewController: UIViewController {
         var timer11 = NSTimer.scheduledTimerWithTimeInterval(7,target:self,selector:Selector("pink_up"),
             userInfo:nil,repeats:false)
         var timer12 = NSTimer.scheduledTimerWithTimeInterval(8,target:self,selector:Selector("yellow2_up"),
+            userInfo:nil,repeats:false)
+        var timer13 = NSTimer.scheduledTimerWithTimeInterval(4,target:self,selector:Selector("grean_up"),
             userInfo:nil,repeats:false)
         
         var timer_score = NSTimer.scheduledTimerWithTimeInterval(13,target:self,selector:Selector("alert_grade"),
@@ -206,6 +219,13 @@ class ViewController: UIViewController {
         
     }
     
+    func grean_up(){
+        greanView.hidden = false
+        var timer_g = NSTimer.scheduledTimerWithTimeInterval(0.01 ,target:self,selector:Selector("grean_next"),
+            userInfo:nil,repeats:true)
+        
+    }
+    
     var x:Int = 0
     func blue_next(){
         
@@ -214,7 +234,7 @@ class ViewController: UIViewController {
         
         yyy = yyy - x
         
-        blueView.frame = CGRectMake(0, CGFloat(yyy), 143, 95)
+        blueView.frame = CGRectMake(0, CGFloat(yyy), 143, 159)
     }
     
     func blue2_next(){
@@ -224,7 +244,7 @@ class ViewController: UIViewController {
         
         yyy = yyy - x
         
-        blue2View.frame = CGRectMake(0, CGFloat(yyy), 143, 95)
+        blue2View.frame = CGRectMake(0, CGFloat(yyy), 143, 159)
     }
     
     func blue3_next(){
@@ -234,7 +254,7 @@ class ViewController: UIViewController {
         
         yyy = yyy - x
         
-        blue3View.frame = CGRectMake(0, CGFloat(yyy), 143, 95)
+        blue3View.frame = CGRectMake(0, CGFloat(yyy), 143, 159)
     }
     
     func blue4_next(){
@@ -244,7 +264,7 @@ class ViewController: UIViewController {
         
         yyy = yyy - x
         
-        blue4View.frame = CGRectMake(0, CGFloat(yyy), 143, 95)
+        blue4View.frame = CGRectMake(0, CGFloat(yyy), 143, 159)
     }
     func blue5_next(){
         
@@ -253,7 +273,7 @@ class ViewController: UIViewController {
         
         yyy = yyy - x
         
-        blue5View.frame = CGRectMake(0, CGFloat(yyy), 143, 95)
+        blue5View.frame = CGRectMake(0, CGFloat(yyy), 143, 159)
     }
     
     var x2:Int = 0
@@ -264,7 +284,7 @@ class ViewController: UIViewController {
         
         yyy = yyy - x2
         
-        yellowView.frame = CGRectMake(0, CGFloat(yyy), 143, 95)
+        yellowView.frame = CGRectMake(174, CGFloat(yyy), 146, 159)
     }
     
     func yellow2_next(){
@@ -274,7 +294,7 @@ class ViewController: UIViewController {
         
         yyy = yyy - x2
         
-        yellow2View.frame = CGRectMake(0, CGFloat(yyy), 143, 95)
+        yellow2View.frame = CGRectMake(174, CGFloat(yyy), 146, 159)
     }
     
     var x3:Int = 0
@@ -285,7 +305,18 @@ class ViewController: UIViewController {
         
         yyy = yyy - x3
         
-        pinkView.frame = CGRectMake(0, CGFloat(yyy), 143, 95)
+        pinkView.frame = CGRectMake(0, CGFloat(yyy), 143, 159)
+    }
+    
+    var x4:Int = 0
+    func grean_next(){
+        
+        self.x4 = 2
+        var yyy:Int = Int(greanView.frame.minY)
+        
+        yyy = yyy - x4
+        
+        greanView.frame = CGRectMake(174, CGFloat(yyy), 146, 159)
     }
     
     //    //view disappear
