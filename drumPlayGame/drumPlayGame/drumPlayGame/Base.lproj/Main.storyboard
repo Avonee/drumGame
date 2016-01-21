@@ -152,6 +152,13 @@
                                     <action selector="yellowView:" destination="oZw-z9-Vjb" eventType="touchUpInside" id="WsP-9F-i51"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YES ! ! !" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXu-Pi-o5j">
+                                <rect key="frame" x="34" y="246" width="270" height="102"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -168,6 +175,7 @@
                         <outlet property="view" destination="zYn-Sk-Xh5" id="b4K-tA-oXR"/>
                         <outlet property="yellow2View" destination="Qkf-sq-nYX" id="xsp-HQ-PNB"/>
                         <outlet property="yellowView" destination="JsF-QA-Q5L" id="lik-ry-i8b"/>
+                        <outlet property="yesLabel" destination="FXu-Pi-o5j" id="xMV-UX-Gv4"/>
                         <segue destination="htn-AX-FRm" kind="modal" identifier="to_record" id="ls1-gy-Yea"/>
                     </connections>
                 </viewController>

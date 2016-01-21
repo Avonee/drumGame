@@ -12,6 +12,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var yesLabel: UILabel!
+    
     var number : Int = 0
     @IBOutlet weak var score: UILabel!
     @IBOutlet weak var blueView: UIButton!
@@ -40,7 +42,10 @@ class ViewController: UIViewController {
         updateScoreLabel()
         
         blueView.hidden = true
-        //           var timer_bb = NSTimer.scheduledTimerWithTimeInterval(0.01,target:self,selector:Selector("b_disappear"), userInfo:nil,repeats:false)
+        yesLabel.text = "YES ! ! !"
+        
+
+       
         
     }
     @IBAction func blue2View(sender: AnyObject) {
@@ -49,8 +54,11 @@ class ViewController: UIViewController {
         
         updateScoreLabel()
         blue2View.hidden = true
-        //        var timer_bb2 = NSTimer.scheduledTimerWithTimeInterval(0.01,target:self,selector:Selector("b2_disappear"),
-        //            userInfo:nil,repeats:false)
+        
+        yesLabel.text = "YES ! ! !"
+        yesLabel.textColor = UIColor.yellowColor()
+        
+
     }
     @IBAction func blue3View(sender: AnyObject) {
         blue3View.backgroundColor = UIColor.redColor()
@@ -58,8 +66,11 @@ class ViewController: UIViewController {
         
         updateScoreLabel()
         blue3View.hidden = true
-        //        var timer_bb3 = NSTimer.scheduledTimerWithTimeInterval(0.01,target:self,selector:Selector("b3_disappear"),
-        //            userInfo:nil,repeats:false)
+        
+        yesLabel.text = "YES ! ! !"
+        yesLabel.textColor = UIColor.redColor()
+        
+
     }
     @IBAction func blue4View(sender: AnyObject) {
         blue4View.backgroundColor = UIColor.redColor()
@@ -67,8 +78,11 @@ class ViewController: UIViewController {
         
         updateScoreLabel()
         blue4View.hidden = true
-        //        var timer_bb4 = NSTimer.scheduledTimerWithTimeInterval(0.01,target:self,selector:Selector("b4_disappear"),
-        //            userInfo:nil,repeats:false)
+        
+        yesLabel.text = "YES ! ! !"
+        yesLabel.textColor = UIColor.greenColor()
+        
+
     }
     @IBAction func blue5View(sender: AnyObject) {
         blue5View.backgroundColor = UIColor.redColor()
@@ -76,8 +90,11 @@ class ViewController: UIViewController {
         
         updateScoreLabel()
         blue5View.hidden = true
-        //        var timer_bb5 = NSTimer.scheduledTimerWithTimeInterval(0.01,target:self,selector:Selector("b5_disappear"),
-        //            userInfo:nil,repeats:false)
+        
+        yesLabel.text = "YES ! ! !"
+        yesLabel.textColor = UIColor.whiteColor()
+        
+
     }
     @IBAction func yellowView(sender: AnyObject) {
         yellowView.backgroundColor = UIColor.redColor()
@@ -85,8 +102,11 @@ class ViewController: UIViewController {
         
         updateScoreLabel()
         yellowView.hidden = true
-        //        var timer_yy = NSTimer.scheduledTimerWithTimeInterval(0.01,target:self,selector:Selector("t_disappear"),
-        //            userInfo:nil,repeats:false)
+        
+        yesLabel.text = "YES ! ! !"
+        yesLabel.textColor = UIColor.orangeColor()
+        
+
     }
     @IBAction func yellow2View(sender: AnyObject) {
         yellow2View.backgroundColor = UIColor.redColor()
@@ -94,9 +114,12 @@ class ViewController: UIViewController {
         
         updateScoreLabel()
         yellow2View.hidden = true
-        //        var timer_yy2 = NSTimer.scheduledTimerWithTimeInterval(0.01,target:self,selector:Selector("t2_disappear"),
-        //            userInfo:nil,repeats:false)
-        alert_grade()
+        
+        yesLabel.text = "YES ! ! !"
+        yesLabel.textColor = UIColor.yellowColor()
+        
+
+        
     }
     @IBAction func pinkView(sender: AnyObject) {
         pinkView.backgroundColor = UIColor.redColor()
@@ -104,8 +127,10 @@ class ViewController: UIViewController {
         
         updateScoreLabel()
         pinkView.hidden = true
-        //        var timer_pp = NSTimer.scheduledTimerWithTimeInterval(0.01,target:self,selector:Selector("k_disappear"),
-        //            userInfo:nil,repeats:false)
+        
+        yesLabel.text = "YES ! ! !"
+        yesLabel.textColor = UIColor.redColor()
+
     }
     
     @IBAction func greanView(sender: AnyObject) {
@@ -114,13 +139,18 @@ class ViewController: UIViewController {
         
         updateScoreLabel()
         greanView.hidden = true
-        //        var timer_pp = NSTimer.scheduledTimerWithTimeInterval(0.01,target:self,selector:Selector("k_disappear"),
-        //            userInfo:nil,repeats:false)
+        
+        yesLabel.text = "YES ! ! !"
+        yesLabel.textColor = UIColor.greenColor()
+        
     }
     
     
     
-    
+    func yes_disappear(){
+         yesLabel.text = ""
+        
+    }
     
     
   
@@ -128,7 +158,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        yesLabel.text = ""
         score.text = "Score: \(number)"
         blueView.hidden = true
         blue2View.hidden = true
