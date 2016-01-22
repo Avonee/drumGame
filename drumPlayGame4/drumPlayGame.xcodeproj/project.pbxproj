@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE39DD531C50F1F600FB88C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE39DD521C50F1F600FB88C0 /* AppDelegate.swift */; };
+		BE39DD561C50F1F600FB88C0 /* drumPlayGame.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE39DD541C50F1F600FB88C0 /* drumPlayGame.xcdatamodeld */; };
+		BE39DD581C50F1F600FB88C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE39DD571C50F1F600FB88C0 /* ViewController.swift */; };
+		BE39DD5B1C50F1F600FB88C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE39DD591C50F1F600FB88C0 /* Main.storyboard */; };
+		BE39DD5D1C50F1F600FB88C0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE39DD5C1C50F1F600FB88C0 /* Images.xcassets */; };
+		BE39DD601C50F1F600FB88C0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE39DD5E1C50F1F600FB88C0 /* LaunchScreen.xib */; };
+		BE39DD6C1C50F1F600FB88C0 /* drumPlayGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE39DD6B1C50F1F600FB88C0 /* drumPlayGameTests.swift */; };
+		BE623DEB1C50F7F900A1B14C /* record.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE623DEA1C50F7F900A1B14C /* record.swift */; };
+		BE623DEF1C511A4D00A1B14C /* Jay-Chou-Tornado.mp3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BE623DEE1C511A4D00A1B14C /* Jay-Chou-Tornado.mp3.mp3 */; };
+		BEBFF0691C528DA7008A9E37 /* View2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBFF0681C528DA7008A9E37 /* View2Controller.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE39DD661C50F1F600FB88C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE39DD451C50F1F600FB88C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE39DD4C1C50F1F600FB88C0;
+			remoteInfo = drumPlayGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE39DD4D1C50F1F600FB88C0 /* drumPlayGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drumPlayGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE39DD511C50F1F600FB88C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE39DD521C50F1F600FB88C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE39DD551C50F1F600FB88C0 /* drumPlayGame.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = drumPlayGame.xcdatamodel; sourceTree = "<group>"; };
+		BE39DD571C50F1F600FB88C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BE39DD5A1C50F1F600FB88C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE39DD5C1C50F1F600FB88C0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BE39DD5F1C50F1F600FB88C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BE39DD651C50F1F600FB88C0 /* drumPlayGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = drumPlayGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE39DD6A1C50F1F600FB88C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE39DD6B1C50F1F600FB88C0 /* drumPlayGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drumPlayGameTests.swift; sourceTree = "<group>"; };
+		BE623DEA1C50F7F900A1B14C /* record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = record.swift; sourceTree = "<group>"; };
+		BE623DEE1C511A4D00A1B14C /* Jay-Chou-Tornado.mp3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Jay-Chou-Tornado.mp3.mp3"; sourceTree = "<group>"; };
+		BEBFF0681C528DA7008A9E37 /* View2Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View2Controller.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE39DD4A1C50F1F600FB88C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE39DD621C50F1F600FB88C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE39DD441C50F1F600FB88C0 = {
+			isa = PBXGroup;
+			children = (
+				BE39DD4F1C50F1F600FB88C0 /* drumPlayGame */,
+				BE39DD681C50F1F600FB88C0 /* drumPlayGameTests */,
+				BE39DD4E1C50F1F600FB88C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE39DD4E1C50F1F600FB88C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE39DD4D1C50F1F600FB88C0 /* drumPlayGame.app */,
+				BE39DD651C50F1F600FB88C0 /* drumPlayGameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE39DD4F1C50F1F600FB88C0 /* drumPlayGame */ = {
+			isa = PBXGroup;
+			children = (
+				BE39DD521C50F1F600FB88C0 /* AppDelegate.swift */,
+				BE39DD571C50F1F600FB88C0 /* ViewController.swift */,
+				BEBFF0681C528DA7008A9E37 /* View2Controller.swift */,
+				BE623DEA1C50F7F900A1B14C /* record.swift */,
+				BE623DEE1C511A4D00A1B14C /* Jay-Chou-Tornado.mp3.mp3 */,
+				BE39DD591C50F1F600FB88C0 /* Main.storyboard */,
+				BE39DD5C1C50F1F600FB88C0 /* Images.xcassets */,
+				BE39DD5E1C50F1F600FB88C0 /* LaunchScreen.xib */,
+				BE39DD541C50F1F600FB88C0 /* drumPlayGame.xcdatamodeld */,
+				BE39DD501C50F1F600FB88C0 /* Supporting Files */,
+			);
+			path = drumPlayGame;
+			sourceTree = "<group>";
+		};
+		BE39DD501C50F1F600FB88C0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE39DD511C50F1F600FB88C0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE39DD681C50F1F600FB88C0 /* drumPlayGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE39DD6B1C50F1F600FB88C0 /* drumPlayGameTests.swift */,
+				BE39DD691C50F1F600FB88C0 /* Supporting Files */,
+			);
+			path = drumPlayGameTests;
+			sourceTree = "<group>";
+		};
+		BE39DD691C50F1F600FB88C0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE39DD6A1C50F1F600FB88C0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE39DD4C1C50F1F600FB88C0 /* drumPlayGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE39DD6F1C50F1F600FB88C0 /* Build configuration list for PBXNativeTarget "drumPlayGame" */;
+			buildPhases = (
+				BE39DD491C50F1F600FB88C0 /* Sources */,
+				BE39DD4A1C50F1F600FB88C0 /* Frameworks */,
+				BE39DD4B1C50F1F600FB88C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = drumPlayGame;
+			productName = drumPlayGame;
+			productReference = BE39DD4D1C50F1F600FB88C0 /* drumPlayGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE39DD641C50F1F600FB88C0 /* drumPlayGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE39DD721C50F1F600FB88C0 /* Build configuration list for PBXNativeTarget "drumPlayGameTests" */;
+			buildPhases = (
+				BE39DD611C50F1F600FB88C0 /* Sources */,
+				BE39DD621C50F1F600FB88C0 /* Frameworks */,
+				BE39DD631C50F1F600FB88C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE39DD671C50F1F600FB88C0 /* PBXTargetDependency */,
+			);
+			name = drumPlayGameTests;
+			productName = drumPlayGameTests;
+			productReference = BE39DD651C50F1F600FB88C0 /* drumPlayGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE39DD451C50F1F600FB88C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = appcoda;
+				TargetAttributes = {
+					BE39DD4C1C50F1F600FB88C0 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					BE39DD641C50F1F600FB88C0 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = BE39DD4C1C50F1F600FB88C0;
+					};
+				};
+			};
+			buildConfigurationList = BE39DD481C50F1F600FB88C0 /* Build configuration list for PBXProject "drumPlayGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE39DD441C50F1F600FB88C0;
+			productRefGroup = BE39DD4E1C50F1F600FB88C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE39DD4C1C50F1F600FB88C0 /* drumPlayGame */,
+				BE39DD641C50F1F600FB88C0 /* drumPlayGameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE39DD4B1C50F1F600FB88C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE623DEF1C511A4D00A1B14C /* Jay-Chou-Tornado.mp3.mp3 in Resources */,
+				BE39DD5B1C50F1F600FB88C0 /* Main.storyboard in Resources */,
+				BE39DD601C50F1F600FB88C0 /* LaunchScreen.xib in Resources */,
+				BE39DD5D1C50F1F600FB88C0 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE39DD631C50F1F600FB88C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE39DD491C50F1F600FB88C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE39DD581C50F1F600FB88C0 /* ViewController.swift in Sources */,
+				BEBFF0691C528DA7008A9E37 /* View2Controller.swift in Sources */,
+				BE39DD531C50F1F600FB88C0 /* AppDelegate.swift in Sources */,
+				BE623DEB1C50F7F900A1B14C /* record.swift in Sources */,
+				BE39DD561C50F1F600FB88C0 /* drumPlayGame.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE39DD611C50F1F600FB88C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE39DD6C1C50F1F600FB88C0 /* drumPlayGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE39DD671C50F1F600FB88C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE39DD4C1C50F1F600FB88C0 /* drumPlayGame */;
+			targetProxy = BE39DD661C50F1F600FB88C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE39DD591C50F1F600FB88C0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE39DD5A1C50F1F600FB88C0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE39DD5E1C50F1F600FB88C0 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE39DD5F1C50F1F600FB88C0 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE39DD6D1C50F1F600FB88C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE39DD6E1C50F1F600FB88C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE39DD701C50F1F600FB88C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = drumPlayGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BE39DD711C50F1F600FB88C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = drumPlayGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BE39DD731C50F1F600FB88C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = drumPlayGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/drumPlayGame.app/drumPlayGame";
+			};
+			name = Debug;
+		};
+		BE39DD741C50F1F600FB88C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = drumPlayGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/drumPlayGame.app/drumPlayGame";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE39DD481C50F1F600FB88C0 /* Build configuration list for PBXProject "drumPlayGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE39DD6D1C50F1F600FB88C0 /* Debug */,
+				BE39DD6E1C50F1F600FB88C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE39DD6F1C50F1F600FB88C0 /* Build configuration list for PBXNativeTarget "drumPlayGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE39DD701C50F1F600FB88C0 /* Debug */,
+				BE39DD711C50F1F600FB88C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE39DD721C50F1F600FB88C0 /* Build configuration list for PBXNativeTarget "drumPlayGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE39DD731C50F1F600FB88C0 /* Debug */,
+				BE39DD741C50F1F600FB88C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BE39DD541C50F1F600FB88C0 /* drumPlayGame.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BE39DD551C50F1F600FB88C0 /* drumPlayGame.xcdatamodel */,
+			);
+			currentVersion = BE39DD551C50F1F600FB88C0 /* drumPlayGame.xcdatamodel */;
+			path = drumPlayGame.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BE39DD451C50F1F600FB88C0 /* Project object */;
+}
